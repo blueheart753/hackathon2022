@@ -1,0 +1,162 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    user-select: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(28, 28, 28);
+    overflow: hidden;
+}
+
+.container {
+    width: 1800px;
+    margin: 0 auto;
+}
+
+.circle {
+    width: 70%;
+    height: 140%;
+    border-radius: 50%;
+    z-index: -10;
+    position: fixed;
+    top: -50%;
+    right: -25%;
+    background: rgb(69, 69, 69);
+    transition: 0.7s;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+}
+
+header>.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>.container>h1>a>img {
+    width: 200px;
+}
+
+nav {
+    width: 50%;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav>ul>li {
+    font-size: 3em;
+    padding: 5px;
+}
+
+section {
+    width: 100%;
+    height: 80%;
+}
+
+section>.container {
+    display: flex;
+    height: 100%;
+}
+
+section>.container>article {
+    width: 100%;
+}
+
+.textBox {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(25vh);
+}
+
+.text { 
+    font-size:1.5em;
+}
+.btn{
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    font-size:1.5em;
+    background: rgb(69, 69, 69);
+    transition: 0.7s;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.imgCnt>ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.imgCnt>ul>li>a>img{
+    transition: 0.3s;
+}
+
+footer{
+    width: 100%;
+    height: 10%%
+}
+
+footer>.contanier{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sns{
+    display: flex;
+}
+
+.sns>div{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius:50%;
+    position: relative;
+    background: rgb(69, 69, 69);
+    transition: 0.3s;
+}
+
+.sns>div>a>img{
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sns>div:hover{
+    transform:translateY(-10px);
+}
+
+.sns>div>a>img{
+    filter: invert(100%);
+}

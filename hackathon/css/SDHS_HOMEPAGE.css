@@ -1,0 +1,216 @@
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    img {
+        -webkit-user-select: all;
+        -moz-user-select: all;
+        -ms-user-select: all;
+        user-select: all
+    }
+
+    body {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    header {
+        display: inline-block;
+        position: fixed;
+        left: 150px;
+        top: -250px;
+    }
+
+    #sideImg {
+        width: 350px;
+    }
+
+    header>a {
+        width: 100px;
+    }
+
+    #logo {
+        display: flex;
+        position: absolute;
+        top: 28%;
+        left: 30%;
+        transition: 0.5s;
+    }
+
+    #logo:hover {
+        transform: scale(1.2);
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu>ul {
+        position: absolute;
+        top: 48%;
+        left: 60px;
+        line-height: 60px;
+        font-size: 26px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .menu>ul>li {
+        transition: 0.55s;
+    }
+
+    .menu>ul>li:hover {
+        transform: scale(1.1);
+        text-decoration: none;
+    }
+
+    .menu>ul>li>span {
+        transition: .5s;
+        border: none;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        width: 220px;
+        height: 55px;
+    }
+
+    .menu>ul>li:hover>span {
+        border-bottom: 3px solid #fff;
+    }
+
+    section {
+        margin-left: 140px;
+    }
+
+    .interducePic {
+        width: 800px;
+        height: 451px;
+    }
+
+    .slides {
+        display: inline-block;
+        position: relative;
+        left: 440px;
+        top: -90px;
+    }
+
+    .Hello {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        position: relative;
+        bottom: 120px;
+        left: 600px;
+        overflow: hidden;
+    }
+
+    .Hello>p {
+        font-size: 36px;
+        transition: 0.8s;
+        margin: 60px 0 60px 0;
+        font-family: 'Jua', sans-serif;
+    }
+
+    .Hello>p:hover {
+        transform: translateX(50px);
+        color: rgb(160, 89, 226);
+    }
+
+    .sub_img {
+        background-color: #fff;
+    }
+
+    .slideshow-container {
+        overflow: hidden;
+    }
+
+    /* Made in 준서 by CSS and JS */
+    .slideshow-container {
+        max-width: 1440px;
+        position: relative;
+        margin: auto;
+        margin-top: 120px;
+    }
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    .sns {
+        display: flex;
+        justify-content: space-around;
+        margin-top: -400px;
+    }
+
+    .logo {
+        width: 60px;
+        transition: 0.5s;
+    }
+
+    #blog {
+        width: 70px;
+        margin: 0 0 30px 0;
+    }
+
+    .logo:hover {
+        transform: translateY(-15px);
+    }
+
+    .gai img {
+        width: 800px;
+        height: 750px;
+    }
+
+    .copy {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        margin-left: 400px;
+        padding-bottom: 40px;
+        width: 600px;
+        border-top: 2px solid rgb(208, 208, 208);
+    }
+
+    footer>p {
+        margin-top: 15px;
+        margin-left: -20px;
+        display: flex;
+        align-content: center;
+    }
+
+    @-webkit-keyframes fade 
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
